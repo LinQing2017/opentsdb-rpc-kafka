@@ -55,7 +55,7 @@ public class TestKafkaRpcPluginConfig {
     assertEquals(0, config.getInt(KafkaRpcPluginConfig.REQUIRED_ACKS));
     assertEquals(10000, config.getInt(KafkaRpcPluginConfig.REQUEST_TIMEOUT));
     assertEquals(1000, config.getInt(KafkaRpcPluginConfig.MAX_RETRIES));
-    assertEquals("async", config.getString(KafkaRpcPluginConfig.PRODUCER_TYPE));
+//    assertEquals("async", config.getString(KafkaRpcPluginConfig.PRODUCER_TYPE));
     assertEquals("kafka.serializer.StringEncoder", 
         config.getString(KafkaRpcPluginConfig.KEY_SERIALIZER));
     assertEquals("net.opentsdb.tsd.KafkaSimplePartitioner", 
